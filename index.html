@@ -1,288 +1,212 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TÀI LIỆU HƯỚNG DẪN SỬ DỤNG - PHẦN MỀM QUẢN LÝ ĐỒ ÁN</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>Tài liệu hướng dẫn sử dụng</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-lines">
-      <h1 class="main-title">TÀI LIỆU HƯỚNG DẪN SỬ DỤNG</h1>
-      <h2 class="sub-title">PHẦN MỀM QUẢN LÝ ĐỒ ÁN</h2>
-      <h3 class="unit-title">KHOA HỆ THỐNG THÔNG TIN QUẢN LÝ – ĐẠI HỌC KINH TẾ QUỐC DÂN</h3>
-    </div>
-  </header>
+    <!-- Header -->
+    <header>
+        <h1>TÀI LIỆU HƯỚNG DẪN SỬ DỤNG</h1>
+        <h2>PHẦN MỀM QUẢN LÝ ĐỒ ÁN</h2>
+        <h3>KHOA HỆ THỐNG THÔNG TIN QUẢN LÝ – ĐẠI HỌC KINH TẾ QUỐC DÂN</h3>
+    </header>
 
-  <main class="container">
-    <nav class="toc" aria-label="Mục lục">
-      <h4>MỤC LỤC</h4>
-      <ol>
-        <li><a href="#gioi-thieu-chung">1. Giới thiệu chung phần mềm</a></li>
-        <li><a href="#hd-ql">2. Hướng dẫn dành cho người quản lý</a>
-          <ol>
-            <li><a href="#hd-ql-dang-nhap">2.1. Đăng nhập hệ thống</a></li>
-            <li><a href="#hd-ql-giao-dien">2.2. Giao diện quản lý</a></li>
-            <li><a href="#hd-ql-trang-chu">2.3. Trang chủ</a></li>
-            <li><a href="#hd-ql-quan-ly-do-an">2.4. Quản lý Đồ án</a></li>
-            <li><a href="#hd-ql-danh-sach-sv">2.5. Quản lý danh sách sinh viên làm đồ án</a></li>
-            <li><a href="#hd-ql-chitiet-doan">2.6. Xem chi tiết đồ án</a></li>
-            <li><a href="#hd-ql-phan-quyen">2.7. Phân quyền người dùng</a></li>
-          </ol>
-        </li>
-        <li><a href="#hd-sv">3. Hướng dẫn dành cho Sinh viên</a>
-          <ol>
-            <li><a href="#hd-sv-dang-nhap">3.1. Đăng nhập</a></li>
-            <li><a href="#hd-sv-tracuu">3.2. Tra cứu đồ án</a></li>
-            <li><a href="#hd-sv-chitiet">3.3. Xem chi tiết đồ án</a></li>
-            <li><a href="#hd-sv-yeu-thich">3.4. Thêm đồ án vào mục yêu thích</a></li>
-          </ol>
-        </li>
-        <li><a href="#loi-thuong-gap">4. Một số lỗi thường gặp và cách xử lý</a></li>
-        <li><a href="#lien-he">5. Liên hệ hỗ trợ</a></li>
-      </ol>
-    </nav>
+    <!-- Mục lục -->
+    <section class="toc">
+        <h2>I. Mục lục</h2>
+        <ul>
+            <li><a href="#gioithieu">1. Giới thiệu chung phần mềm</a></li>
+            <li><a href="#quanly">2. Hướng dẫn dành cho người quản lý</a></li>
+            <li><a href="#nguoidung">3. Hướng dẫn dành cho người dùng</a></li>
+            <li><a href="#loi">4. Một số lỗi thường gặp và cách xử lý</a></li>
+            <li><a href="#lienhe">5. Liên hệ hỗ trợ</a></li>
+        </ul>
+    </section>
 
-    <article class="doc">
-      <section id="gioi-thieu-chung">
-        <h2>1. Giới thiệu chung phần mềm</h2>
-        <p>Phần mềm Quản lý Đồ án được xây dựng nhằm hỗ trợ khoa Hệ thống Thông tin Quản lý trong việc tổ chức, theo dõi và quản lý thông tin đồ án của sinh viên.</p>
+    <hr>
+
+    <!-- 1. Giới thiệu chung -->
+    <section id="gioithieu">
+        <h2>1. Giới thiệu chung</h2>
+        <p>
+            Phần mềm Quản lý Đồ án được xây dựng nhằm hỗ trợ khoa Hệ thống Thông tin Quản lý 
+            trong việc tổ chức, theo dõi và quản lý thông tin đồ án của sinh viên.
+        </p>
         <p>Hệ thống cho phép hai nhóm người dùng chính:</p>
         <ul>
-          <li>Người quản lý (Admin/Khoa)</li>
-          <li>Sinh viên (User)</li>
+            <li>Người quản lý (Admin/Khoa)</li>
+            <li>Sinh viên (User)</li>
         </ul>
-      </section>
 
-      <hr />
+        <!-- ẢNH ĐƯỢC THÊM TẠI ĐÂY -->
+        <div class="image-center">
+            <img src="img/1.jpg" alt="Màn hình chính" width="500">
+        </div>
+    </section>
 
-      <section id="hd-ql">
+    <hr>
+
+    <!-- 2. Hướng dẫn dành cho người quản lý -->
+    <section id="quanly">
         <h2>2. Hướng dẫn dành cho Người Quản Lý</h2>
 
-        <section id="hd-ql-dang-nhap" class="subsection">
-          <h3>2.1. Đăng nhập hệ thống</h3>
-          <ol>
+        <h3>2.1. Đăng nhập hệ thống</h3>
+        <ol>
             <li>Truy cập trang đăng nhập của phần mềm.</li>
-            <li>Nhập:<br>
-              <strong>- Tên đăng nhập</strong><br>
-              <strong>- Mật khẩu</strong>
-            </li>
-            <li>Nhấn <em>Đăng nhập</em> để vào giao diện quản lý.</li>
-          </ol>
-          <p>Nếu quên mật khẩu, chọn chức năng <em>Quên mật khẩu</em> để được hỗ trợ.</p>
-        </section>
+            <li>Nhập tên đăng nhập và mật khẩu.</li>
+            <li>Nhấn Đăng nhập để vào giao diện quản lý.</li>
+        </ol>
+        <p>Nếu quên mật khẩu, chọn chức năng "Quên mật khẩu".</p>
 
-        <section id="hd-ql-giao-dien" class="subsection">
-          <h3>2.2. Giao diện quản lý</h3>
-          <p>Sau khi đăng nhập, quản lý sẽ thấy các menu chính:</p>
-          <ul>
+        <hr>
+
+        <h3>2.2. Giao diện quản lý</h3>
+        <ul>
             <li>Trang chủ</li>
             <li>Quản lý Dữ liệu
-              <ul>
-                <li>Quản lý sinh viên</li>
-                <li>Quản lý tài khoản</li>
-              </ul>
+                <ul>
+                    <li>Quản lý sinh viên</li>
+                    <li>Quản lý tài khoản</li>
+                </ul>
             </li>
             <li>Quản lý Đồ án
-              <ul>
-                <li>Chỉnh sửa đồ án</li>
-                <li>Tra cứu đồ án</li>
-              </ul>
+                <ul>
+                    <li>Chỉnh sửa đồ án</li>
+                    <li>Tra cứu đồ án</li>
+                </ul>
             </li>
             <li>Báo cáo</li>
             <li>Trợ giúp</li>
-          </ul>
-        </section>
+        </ul>
 
-        <section id="hd-ql-trang-chu" class="subsection">
-          <h3>2.3. Trang chủ</h3>
-          <p>Hệ thống hiển thị Tổng số lượng đồ án, Tổng số lượng sinh viên, Tổng số lượng tài liệu, và Tổng số tài khoản. Bên dưới là các biểu đồ và bảng cho phép hiển thị 10 đồ án mới nhất.</p>
-        </section>
+        <hr>
 
-        <section id="hd-ql-quan-ly-do-an" class="subsection">
-          <h3>2.4. Quản lý Đồ án</h3>
+        <h3>2.3. Trang chủ</h3>
+        <p>
+            Hệ thống hiển thị tổng số lượng đồ án, sinh viên, tài liệu và tài khoản.  
+            Bên dưới là biểu đồ và danh sách 10 đồ án mới nhất.
+        </p>
 
-          <h4>2.4.1. Xem danh sách đồ án</h4>
-          <p>Truy cập <em>Quản lý Đồ án</em> → Hệ thống hiển thị bảng gồm:</p>
-          <ul>
+        <h3>2.4. Quản lý Đồ án</h3>
+        <h4>2.4.1. Xem danh sách đồ án</h4>
+        <ul>
             <li>Tên đồ án</li>
             <li>Sinh viên thực hiện</li>
             <li>Giáo viên hướng dẫn</li>
             <li>Năm bảo vệ</li>
-            <li>Trạng thái (hoàn thành/chưa hoàn thành)</li>
-            <li>Các thao tác: Sửa – Xóa</li>
-          </ul>
+            <li>Trạng thái</li>
+            <li>Thao tác: Sửa – Xóa</li>
+        </ul>
 
-          <h4>2.4.2. Thêm đồ án</h4>
-          <ol>
-            <li>Chọn <em>Thêm đồ án</em>.</li>
-            <li>Nhập các thông tin: Tên đồ án, Mô tả tóm tắt, Sinh viên thực hiện (chọn từ danh sách), Giáo viên hướng dẫn, Năm bắt đầu – năm bảo vệ, File báo cáo (nếu hỗ trợ upload).</li>
-            <li>Nhấn <em>Lưu</em> để hoàn tất.</li>
-          </ol>
+        <h4>2.4.2. Thêm đồ án</h4>
+        <ol>
+            <li>Chọn "Thêm đồ án".</li>
+            <li>Nhập thông tin.</li>
+            <li>Nhấn Lưu.</li>
+        </ol>
 
-          <h4>2.4.3. Sửa đồ án</h4>
-          <ol>
-            <li>Tại danh sách đồ án → chọn <em>Sửa</em>.</li>
-            <li>Cập nhật các thông tin cần thay đổi.</li>
-            <li>Nhấn <em>Cập nhật</em>.</li>
-          </ol>
+        <h4>2.4.3. Sửa đồ án</h4>
+        <p>Sửa thông tin rồi nhấn Cập nhật.</p>
 
-          <h4>2.4.4. Xóa đồ án</h4>
-          <ol>
-            <li>Tại danh sách đồ án → nhấn <em>Xóa</em>.</li>
-            <li>Hệ thống hiển thị cảnh báo.</li>
-            <li>Nhấn <em>Đồng ý</em> để xóa vĩnh viễn.</li>
-          </ol>
-        </section>
+        <h4>2.4.4. Xóa đồ án</h4>
+        <p>Xác nhận khi hệ thống hỏi cảnh báo.</p>
 
-        <section id="hd-ql-danh-sach-sv" class="subsection">
-          <h3>2.5. Quản lý danh sách sinh viên làm đồ án</h3>
+        <hr>
 
-          <h4>2.5.1. Xem danh sách sinh viên</h4>
-          <p>Vào menu <em>Quản lý Sinh viên</em>. Thông tin hiển thị:</p>
-          <ul>
+        <h3>2.5. Quản lý danh sách sinh viên làm đồ án</h3>
+        <h4>2.5.1. Xem danh sách sinh viên</h4>
+        <ul>
             <li>Mã sinh viên</li>
             <li>Họ tên</li>
             <li>Lớp</li>
             <li>Đồ án đang làm</li>
             <li>Giáo viên hướng dẫn</li>
             <li>Năm thực hiện</li>
-          </ul>
+        </ul>
 
-          <h4>2.5.2. Thêm sinh viên</h4>
-          <ol>
-            <li>Chọn <em>Thêm sinh viên</em>.</li>
-            <li>Nhập thông tin cá nhân cơ bản.</li>
-            <li>(Tùy chọn) Gán đồ án cho sinh viên ngay khi tạo.</li>
-            <li>Nhấn <em>Lưu</em>.</li>
-          </ol>
+        <h4>2.5.2. Thêm sinh viên</h4>
+        <p>Nhập thông tin, có thể gán đồ án ngay.</p>
 
-          <h4>2.5.3. Cập nhật thông tin sinh viên</h4>
-          <p>Chọn sinh viên → Sửa → cập nhật thông tin → Lưu.</p>
+        <h4>2.5.3. Cập nhật thông tin sinh viên</h4>
 
-          <h4>2.5.4. Xóa sinh viên</h4>
-          <p>Chọn sinh viên → Xóa → xác nhận.</p>
-        </section>
+        <h4>2.5.4. Xóa sinh viên</h4>
 
-        <section id="hd-ql-chitiet-doan" class="subsection">
-          <h3 id="hd-ql-chitiet-doan">2.6. Xem chi tiết đồ án</h3>
-          <p>Quản lý có thể:</p>
-          <ul>
-            <li>Xem danh sách sinh viên của từng đồ án</li>
-            <li>Xem giáo viên hướng dẫn</li>
-            <li>Xem năm bảo vệ</li>
-            <li>Xem file báo cáo/đính kèm</li>
-          </ul>
-        </section>
+        <hr>
 
-        <section id="hd-ql-phan-quyen" class="subsection">
-          <h3>2.7. Phân quyền người dùng</h3>
-          <p><strong>Người quản lý và Giảng viên</strong></p>
-          <ul>
-            <li>Người quản lý có thể thực hiện tất cả các chức năng.</li>
-            <li>Giảng viên chỉ có thể thực hiện các chức năng ngoại trừ in báo cáo.</li>
-          </ul>
-        </section>
-      </section>
+        <h3>2.6. Xem chi tiết đồ án</h3>
+        <ul>
+            <li>Xem danh sách sinh viên</li>
+            <li>Giáo viên hướng dẫn</li>
+            <li>Năm bảo vệ</li>
+            <li>File báo cáo</li>
+        </ul>
 
-      <hr />
+        <h3>2.7. Phân quyền người dùng</h3>
+        <ul>
+            <li>Quản lý: toàn quyền</li>
+            <li>Giảng viên: hạn chế in báo cáo</li>
+        </ul>
 
-      <section id="hd-sv">
+    </section>
+
+    <hr>
+
+    <!-- 3. Hướng dẫn dành cho sinh viên -->
+    <section id="nguoidung">
         <h2>3. Hướng dẫn dành cho Sinh viên</h2>
 
-        <section id="hd-sv-dang-nhap" class="subsection">
-          <h3>3.1. Đăng nhập</h3>
-          <p>Sinh viên đăng nhập bằng tài khoản được cấp hoặc đồng bộ từ hệ thống.</p>
-        </section>
+        <h3>3.1. Đăng nhập</h3>
+        <p>Sinh viên đăng nhập bằng tài khoản đã được cấp.</p>
 
-        <section id="hd-sv-tracuu" class="subsection">
-          <h3>3.2. Tra cứu đồ án</h3>
-          <p>Chọn menu <em>Danh sách đồ án</em>. Hệ thống hiển thị:</p>
-          <ul>
+        <h3>3.2. Tra cứu đồ án</h3>
+        <ul>
             <li>Tên đồ án</li>
             <li>Người thực hiện</li>
             <li>Giáo viên hướng dẫn</li>
-            <li>Mô tả ngắn</li>
             <li>Năm bảo vệ</li>
-          </ul>
-          <p>Sinh viên có thể lọc đồ án theo: năm bảo vệ, tên giáo viên, từ khóa.</p>
-        </section>
+        </ul>
+        <p>Có thể lọc theo năm, giáo viên hoặc từ khóa.</p>
 
-        <section id="hd-sv-chitiet" class="subsection">
-          <h3>3.3. Xem chi tiết đồ án</h3>
-          <p>Khi nhấn vào một đồ án, sinh viên sẽ thấy: tên đầy đủ, mô tả chi tiết, thông tin thành viên thực hiện, giáo viên hướng dẫn, năm thực hiện – bảo vệ, file báo cáo (nếu có).</p>
-        </section>
+        <h3>3.3. Xem chi tiết đồ án</h3>
+        <p>Hiển thị đầy đủ thông tin và file báo cáo (nếu có).</p>
 
-        <section id="hd-sv-yeu-thich" class="subsection">
-          <h3>3.4. Thêm đồ án vào mục yêu thích</h3>
-          <ol>
-            <li>Mở chi tiết đồ án.</li>
-            <li>Nhấn nút <em>Thêm vào yêu thích</em>.</li>
-            <li>Đồ án sẽ xuất hiện trong mục <em>Yêu thích của tôi</em>.</li>
-          </ol>
-          <p>Có thể xóa khỏi danh sách bằng nút <em>Bỏ yêu thích</em>.</p>
-        </section>
-      </section>
+        <h3>3.4. Thêm đồ án vào yêu thích</h3>
 
-      <hr />
+    </section>
 
-      <section id="loi-thuong-gap">
+    <hr>
+
+    <!-- 4. Lỗi thường gặp -->
+    <section id="loi">
         <h2>4. Một số lỗi thường gặp và cách xử lý</h2>
 
-        <h4>4.1. Không đăng nhập được</h4>
+        <h3>4.1. Không đăng nhập được</h3>
         <ul>
-          <li>Kiểm tra đúng tên đăng nhập, mật khẩu.</li>
-          <li>Kiểm tra kết nối mạng.</li>
-          <li>Nếu quên mật khẩu → sử dụng chức năng <em>Quên mật khẩu</em>.</li>
+            <li>Kiểm tra tài khoản</li>
+            <li>Kiểm tra mạng</li>
+            <li>Dùng chức năng quên mật khẩu</li>
         </ul>
 
-        <h4>4.2. Không lưu được đồ án</h4>
-        <ul>
-          <li>Chưa nhập đủ các trường bắt buộc.</li>
-          <li>File upload quá dung lượng cho phép.</li>
-        </ul>
+        <h3>4.2. Không lưu được đồ án</h3>
+        <p>Do thiếu thông tin hoặc file quá dung lượng.</p>
 
-        <h4>4.3. Không tìm thấy sinh viên</h4>
-        <ul>
-          <li>Dùng chức năng tìm kiếm theo mã hoặc tên.</li>
-          <li>Kiểm tra xem sinh viên đã được thêm vào hệ thống chưa.</li>
-        </ul>
-      </section>
+        <h3>4.3. Không tìm thấy sinh viên</h3>
+        <p>Tìm theo mã hoặc tên, kiểm tra đã được thêm vào hệ thống.</p>
 
-      <hr />
+    </section>
 
-      <section id="lien-he">
+    <hr>
+
+    <!-- 5. Liên hệ -->
+    <section id="lienhe">
         <h2>5. Liên hệ hỗ trợ</h2>
         <p>Bộ phận quản trị khoa HTTTQL</p>
-        <ul>
-          <li>Email hỗ trợ: <a href="mailto:mis@st.neu.edu.vn">mis@st.neu.edu.vn</a></li>
-          <li>SĐT: <a href="tel:0986839808">0986 839 808</a></li>
-        </ul>
-      </section>
-
-      <footer class="doc-footer">
-        <p>© Khoa Hệ thống Thông tin Quản lý – Đại học Kinh tế Quốc dân</p>
-      </footer>
-    </article>
-  </main>
-
-  <!-- Optional small script for smooth scrolling on in-page links -->
-  <script>
-    (function() {
-      const links = document.querySelectorAll('a[href^="#"]');
-      for (const link of links) {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) target.scrollIntoView({behavior: 'smooth', block: 'start'});
-        });
-      }
-    })();
-  </script>
+        <p>Email: mis@st.neu.edu.vn</p>
+        <p>SĐT: 0986839808</p>
+    </section>
 
 </body>
 </html>
-
-
